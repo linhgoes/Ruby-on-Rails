@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+x = File.open(ARGV[0]).readline().to_i
+for i in (1..x)
+if i.to_i%3==0 and i.to_i%5==0 
+  then puts "Hop"
+elsif i.to_i%3==0
+  then puts "Hoppity" 
+elsif i.to_i%5==0  
+  then puts "Hophop" 
+end
+end
